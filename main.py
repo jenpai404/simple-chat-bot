@@ -5,10 +5,10 @@ import requests
 def basic_coms(input_coms,username):
     print(f"\nj-bot: Hello there {username}. Are you feeling good today?? (yes/no)")
     feelingInput=input("You: ")
-    if feelingInput.lower()=="yes" or feelingInput.lower()=="yes how bout you":
-        print("\nj-bot: Glad to hear that. Spread the positive vibes 😉\nj-bot:  I'm feeling great thanks for asking")
+    if feelingInput.lower()=="yes":
+        print("\nj-bot: Glad to hear that. Spread the positive vibes 😉")
     elif feelingInput.lower()=="no" or feelingInput.lower()=="no how bout you":
-        print("\nj-bot:  I'm so sorry to hear that. I hope you feel better soon 😇\nj-bot:  I feel great thanks for asking")
+        print("\nj-bot:  I'm so sorry to hear that. I hope you feel better soon 😇")
         quoteInput=input("\nj-bot:  Would you like quote to cheer you up?? (yes/no)\nYou:  ")
         if quoteInput.lower()=="yes" or quoteInput.lower()=="sure why not":
             print(getQuote(username))
@@ -64,8 +64,5 @@ elif input_coms.lower()=="hello":
         print(f"\nj-bot:  Okhay {username}. The weather will be a mystery i guess 😏")
     else:
         print("\nj-bot:  Sorry my model is not trained enough to operate on that input 😞")
-
-    input("\nj-bot:  How may i further assist you??\nYou:  ")
-    print("\nj-bot:  yo wtf dude i'm a robot 😞")
 
 
