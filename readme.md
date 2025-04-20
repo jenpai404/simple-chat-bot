@@ -1,1 +1,1 @@
-this is a simple chat-bot made using if-else conditions
+this is a simple chat-bot with minimum chat functionality
