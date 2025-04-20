@@ -9,7 +9,7 @@ def basic_coms(input_coms,username):
         print("\nj-bot: Glad to hear that. Spread the positive vibes 😉")
     elif feelingInput.lower()=="no" or feelingInput.lower()=="no how bout you":
         print("\nj-bot:  I'm so sorry to hear that. I hope you feel better soon 😇")
-        quoteInput=input("\nj-bot:  Would you like quote to cheer you up?? (yes/no)\nYou:  ")
+        quoteInput=input("\nj-bot:  Would you like a quote to cheer you up?? (yes/no)\nYou:  ")
         if quoteInput.lower()=="yes" or quoteInput.lower()=="sure why not":
             print(getQuote(username))
         else:
@@ -38,7 +38,7 @@ def get_weather(city, api_key):
     
 # function to call and print weather report
 def weatherReport():
-    api_key = "f0469ee4bd54a230c8f73674898de16e"  # Replace this with your real API key
+    api_key = "your-api-key"  # Replace this with your real API key
     city = input("\nj-bot:  Your city is?? 🤔\nYou:  ").strip()
     if city.lower() == "exit":
         print("\nj-bot:  Goodbye! Stay warm (or cool 😎)")
